@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body
+{
+    background-color: aliceblue;
+    height: 100vh;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 100vh;
+}
+.cell
+{
+    background-color: #e7e7e7;
+    width: 60px;
+    height: 80px;
+    border: 2px solid rgb(196, 194, 194);
+    box-shadow: inset 1px -2px 3px rgb(164, 163, 163);
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: showCards 2s alternate ;
+    transition: all 1s;
+}
+.row
+{
+    display: flex;
+}
+#timerBox .btnTime
+{
+    background-color: #555;
+    color: #e7e7e7;
+    width: 100px;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#timerBox #timerDisplay
+{
+    margin: 10px;
+    color: purple;
+}
+#startBtn
+{
+    margin-top: 20px;
+    width: 150px;
+    background-color: aquamarine;
+    color: brown;
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px lightblue;
+    cursor: pointer;
+}
+#newGame{
+    display: none;
+    margin-top: 20px;
+    width: 150px;
+    padding: 10px;
+    background-color: lightgrey;
+    color: red;
+    font-size: large;
+    border-radius: 15px;
+    box-shadow: 2px 3px 2px gray;
+    border: none;
+    cursor: pointer;
+    transition: transform ease-in-out 0.2s ;
+}
+#newGame:hover{
+    transform: scale(1.1);
+}
+#message{
+    color: rebeccapurple;
+    border-radius: 10px;
+    background-color: aliceblue;
+    font-size: larger;
+    font-weight: 800;
+    padding: 20px;
+}
+#text{
+    margin: 20px;
+    font-size: larger;
+    font-weight: 800;
+    color: darkmagenta;
+}

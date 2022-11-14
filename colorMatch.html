@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="colorMatch.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="message"></div>
+        
+        <div class="row">
+            <div class="cell" id="1" onclick="clickCard(this)"></div>
+            <div class="cell" id="2" onclick="clickCard(this)"></div>
+            <div class="cell" id="3" onclick="clickCard(this)"></div>
+            <div class="cell" id="4" onclick="clickCard(this)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="5"  onclick="clickCard(this)"></div>
+            <div class="cell" id="6"  onclick="clickCard(this)"></div>
+            <div class="cell" id="7"  onclick="clickCard(this)"></div>
+            <div class="cell" id="8"  onclick="clickCard(this)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="9"  onclick="clickCard(this)"></div>
+            <div class="cell" id="10"  onclick="clickCard(this)"></div>
+            <div class="cell" id="11"  onclick="clickCard(this)"></div>
+            <div class="cell" id="12"  onclick="clickCard(this)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="13"  onclick="clickCard(this)"></div>
+            <div class="cell" id="14"  onclick="clickCard(this)"></div>
+            <div class="cell" id="15"  onclick="clickCard(this)"></div>
+            <div class="cell" id="16"  onclick="clickCard(this)"></div>
+        </div>
+
+        <div id="timerBox">
+            <input type="button" class="btnTime" value="10s" onclick="setTime(9)">
+            <input type="button" class="btnTime" value="20s" onclick="setTime(19)">
+            <input type="button" class="btnTime" value="30s" onclick="setTime(29)">
+
+            <span id="timerDisplay">Time Left : </span>
+        </div>
+
+        <!-- <input type="button" value="Start" id="startBtn" onclick="startBtn()"> -->
+        <input type="button" value="Try Again" id="newGame" onclick="newGame()">
+        <p id="text">&#8593 Choose time to Start Game </p>
+    </div>
+    <script src="colorMatch.js"></script>
+</body>
+
+</html>
